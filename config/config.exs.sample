@@ -1,0 +1,9 @@
+use Mix.Config
+
+config :nadia,
+  token: "telegram bot token"
+
+config :leekbot,
+  trakt_api_root: "https://api-v2launch.trakt.tv/",
+  trakt_api_key: "trakt API key",
+  trakt_api_version: 2
