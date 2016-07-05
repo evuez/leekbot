@@ -1,4 +1,8 @@
 defmodule Leekbot.Poller do
+  def start_link(router) do
+    Task.start_link(__MODULE__, :poll, [router, 0])
+  end
+
   def poll(router, offset) do
     {:ok, updates} = Nadia.get_updates offset: offset
 

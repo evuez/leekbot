@@ -14,7 +14,8 @@ defmodule Leekbot.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger, :nadia, :httpoison]]
+    [applications: [:logger, :nadia, :httpoison],
+     mod: {Leekbot, []}]
   end
 
   # Dependencies can be Hex packages:
